@@ -3,7 +3,12 @@
 
 # coding=utf-8
 
-#python db_anno_extract.py [gene-anno-file] [blast-out-file][output-name]
+'''
+
+去掉ID的>存为i1,将后面所有信息合并存为i2
+将besthit的第二列index与i1匹配。得到i2注释作为最后一列anno添加。
+'''
+
 
 import sys,re
 
